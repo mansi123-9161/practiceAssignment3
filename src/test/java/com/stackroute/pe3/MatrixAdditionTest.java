@@ -27,7 +27,7 @@ public class MatrixAdditionTest {
         int column=2;
         int[][] matrix1={{1,2},{3,4}};
         int[][] matrix2={{1,2},{3,4}};
-        int[][] actualresult=matrixAddition.addMatrix(row,column,matrix1,matrix2);
+        int[][] actualresult=matrixAddition.checkSum(row,column,matrix1,matrix2);
         int[][] result={{2,4},{6,8}};
         assertArrayEquals(result,actualresult);
     }
@@ -37,7 +37,7 @@ public class MatrixAdditionTest {
         int column=1;
         int[][] matrix1={{1,2},{3,4}};
         int[][] matrix2={{1,2},{3,4}};
-        int[][] actualresult=matrixAddition.addMatrix(row,column,matrix1,matrix2);
+        int[][] actualresult=matrixAddition.checkSum(row,column,matrix1,matrix2);
        // int[][] result={{2,4},{6,8}};
         assertEquals("out of bound",actualresult);
     }
